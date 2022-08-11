@@ -1,38 +1,67 @@
+body {
+  background-color: rgb(181, 202, 203);
+  color: #fff;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bgTask {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bgTask div {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.taskNumber {
+  color: #999;
+  border: 1px solid #999;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  font-size: 14px;
+  margin-right: 8px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bgTask .taskText{
+  flex: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bgTask .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+ 
+}
+.icons{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+.bgTask .icons span{
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  cursor: pointer;
+  color: rgb(55, 185, 181);
+}
+.bgTask .icons span:hover{
+  color: rgb(236, 218, 81)
+}
+.mr-20{
+  margin-right: 20px;
+}
+.btn_add{
+  background-color:rgb(58, 148, 159);
+}
+.btn_add:hover{
+  background-color:rgb(58, 148, 159);
 }
